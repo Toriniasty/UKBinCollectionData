@@ -91,7 +91,7 @@ class CouncilClass(AbstractGetBinDataClass):
 
             # Find all bin collection sections
             bin_sections = soup.find_all("div", {"class": "listing_template_record"})
-
+            print(bin_sections)
             for section in bin_sections:
                 # Get bin type from h2 tag
                 bin_type_elem = section.find("h2")
@@ -122,7 +122,7 @@ class CouncilClass(AbstractGetBinDataClass):
                             print(f"Error parsing date '{collection_date_string}': {e}")
 
             if not bin_data["bins"]:
-                raise ValueError("No bin collection data found")
+                raise ValueError("No bin collection data found: " + bin_data)
 
         except Exception as e:
             # Here you can log the exception if needed
