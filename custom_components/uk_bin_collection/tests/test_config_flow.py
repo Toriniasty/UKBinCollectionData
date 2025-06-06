@@ -465,7 +465,7 @@ async def test_reconfigure_flow(hass):
 
 async def get_councils_json(self) -> object:
     """Returns an object of supported councils and their required fields."""
-    url = "https://raw.githubusercontent.com/robbrad/UKBinCollectionData/0.104.0/uk_bin_collection/tests/input.json"
+    url = "https://raw.githubusercontent.com/Toriniasty/UKBinCollectionData/refs/heads/feature/fix-Croydon/uk_bin_collection/tests/input.json"
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
