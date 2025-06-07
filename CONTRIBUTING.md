@@ -50,10 +50,10 @@ The project uses [poetry](https://python-poetry.org/docs/) to manage dependencie
 pip install poetry
 
 # Clone the Repo
-git clone https://github.com/robbrad/UKBinCollectionData
+git clone https://github.com/Toriniasty/UKBinCollectionData
 cd UKBinCollectionData
 
-# Install Dependencies 
+# Install Dependencies
 poetry install
 poetry shell
 ```
@@ -63,9 +63,9 @@ poetry shell
 - To provide UK bin data in a standardised format for use (albeit not exclusively) with [HomeAssistant](https://www.home-assistant.io/)
 
 ### What can I contribute to?
-- The majority of project work comes from developing new scrapers for requested councils. These can be found on the [issue tracker](https://github.com/robbrad/UKBinCollectionData/labels/council%20request) with `council request` labels.
-- Tasks that require [additional input](https://github.com/robbrad/UKBinCollectionData/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) have the `help wanted` label - these can be trickier requests or may have many smaller tasks.
-- [Easier tasks](https://github.com/robbrad/UKBinCollectionData/labels/good%20first%20issue), that would be a good fit for people new to the project or the world of web scraping are labelled with the `good first issue` label
+- The majority of project work comes from developing new scrapers for requested councils. These can be found on the [issue tracker](https://github.com/Toriniasty/UKBinCollectionData/labels/council%20request) with `council request` labels.
+- Tasks that require [additional input](https://github.com/Toriniasty/UKBinCollectionData/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) have the `help wanted` label - these can be trickier requests or may have many smaller tasks.
+- [Easier tasks](https://github.com/Toriniasty/UKBinCollectionData/labels/good%20first%20issue), that would be a good fit for people new to the project or the world of web scraping are labelled with the `good first issue` label
 
 ## Claiming an issue
 If there is an existing issue you wish to work on, please do the following things:
@@ -86,19 +86,19 @@ Don't worry if you forget - commit messages are automatically checked when you o
 
 
 # Adding a scraper
-This project uses a design pattern called the [Template Method](https://refactoring.guru/design-patterns/template-method) which basically allows for a structured class that can be extended. In our case, the getting of the data from the council and the presentation of the JSON remains the same via the [abstract class](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/get_bin_data.py#L21) - however the scraping of each council is different and this allows us to have a class for each [council](https://github.com/robbrad/UKBinCollectionData/tree/master/uk_bin_collection/uk_bin_collection/councils) - you can see this in action [here](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/CheshireEastCouncil.py#L5,L16).
+This project uses a design pattern called the [Template Method](https://refactoring.guru/design-patterns/template-method) which basically allows for a structured class that can be extended. In our case, the getting of the data from the council and the presentation of the JSON remains the same via the [abstract class](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/get_bin_data.py#L21) - however the scraping of each council is different and this allows us to have a class for each [council](https://github.com/Toriniasty/UKBinCollectionData/tree/master/uk_bin_collection/uk_bin_collection/councils) - you can see this in action [here](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/CheshireEastCouncil.py#L5,L16).
 
 There are a few different options for scraping, and you are free to choose whichever best suits the council:
-- Using [Beautiful Soup 4](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/CheshireEastCouncil.py)
-- Using the [requests](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/ManchesterCityCouncil.py) module
-- Reading data from [external files](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/LeedsCityCouncil.py)
-- Using [Selenium](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/Chilterns.py) to automate browser behaviour
+- Using [Beautiful Soup 4](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/CheshireEastCouncil.py)
+- Using the [requests](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/ManchesterCityCouncil.py) module
+- Reading data from [external files](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/LeedsCityCouncil.py)
+- Using [Selenium](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/Chilterns.py) to automate browser behaviour
 
 ## Developing
 To get started, first you will need to fork this repository and setup your own working environment before you can start developing.
 
 ### Developing using our Dev Container
-You need to set up Docker, Visual Studio Code (VSCode), and a development container (devcontainer) after cloning the repository at https://github.com/robbrad/UKBinCollectionData.
+You need to set up Docker, Visual Studio Code (VSCode), and a development container (devcontainer) after cloning the repository at https://github.com/Toriniasty/UKBinCollectionData.
 
 #### Prerequisites
 Before you start, make sure you have the following installed on your computer:
@@ -109,7 +109,7 @@ Before you start, make sure you have the following installed on your computer:
 #### Step 1: Clone the Repository
 First, clone the repository to your local machine. Open a terminal and run the following command:
 ```bash
-git clone https://github.com/robbrad/UKBinCollectionData.git
+git clone https://github.com/Toriniasty/UKBinCollectionData.git
 ```
 Navigate into the directory:
 ```bash
@@ -150,7 +150,7 @@ The new .py file will be used in the CLI to call the parser, so be sure to pick 
 python collect_data.py CheshireEastCouncil <web-url>
 ```
 
-To simplify things somewhat, a [template](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/council_class_template/councilclasstemplate.py) file has been created - open this file, copy the contents to your new .py file and start from there. The create script above will create
+To simplify things somewhat, a [template](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/councils/council_class_template/councilclasstemplate.py) file has been created - open this file, copy the contents to your new .py file and start from there. The create script above will create
 
 1. A council Class file under the councils folder
 2. Make an entry in input.json
@@ -211,15 +211,15 @@ Each parameter also has its own validation method that should be called after th
 The first two are simple validators - if the parameter is used but no value is given, they will throw an exception. `check_postcode()` works differently -  instead making a call to the [postcodes.io](https://postcodes.io/) API to check if it exists or not. An exception will only be thrown here if the response code is not `HTTP 200`.
 
 ### Common Functions
-The project has a small but growing library of functions (and the occasional variable) that are useful when scraping websites or calendars - aptly named [common.py](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/common.py).
+The project has a small but growing library of functions (and the occasional variable) that are useful when scraping websites or calendars - aptly named [common.py](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/uk_bin_collection/common.py).
 Useful functions include:
-- functions to [add ordinals](https://github.com/robbrad/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L72) to dates (04 becomes 4th) or [remove them](https://github.com/robbrad/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L86) (4th becomes 04)
-- a function to check [if a date is a holiday](https://github.com/robbrad/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L117) in a given part of the UK
-- a function that returns the [dates of a given weekday](https://github.com/robbrad/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L136) in N amounts of weeks
-- a function that returns a [list of dates every N days](https://github.com/robbrad/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L148) from a given start date
+- functions to [add ordinals](https://github.com/Toriniasty/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L72) to dates (04 becomes 4th) or [remove them](https://github.com/Toriniasty/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L86) (4th becomes 04)
+- a function to check [if a date is a holiday](https://github.com/Toriniasty/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L117) in a given part of the UK
+- a function that returns the [dates of a given weekday](https://github.com/Toriniasty/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L136) in N amounts of weeks
+- a function that returns a [list of dates every N days](https://github.com/Toriniasty/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L148) from a given start date
 - a function to check [if a string contains a date](./uk_bin_collection/uk_bin_collection/common.py#L249) (leverages [dateutil's parser](https://dateutil.readthedocs.io/en/stable/parser.html))
 
-`common.py` also contains a [standardised date format](https://github.com/robbrad/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L11) variable called `date_format`, which is useful to call when formatting datetimes.
+`common.py` also contains a [standardised date format](https://github.com/Toriniasty/UKBinCollectionData/blob/e49da2f43143ac7c65fbeaf35b5e86b3ea19e31b/uk_bin_collection/uk_bin_collection/common.py#L11) variable called `date_format`, which is useful to call when formatting datetimes.
 
 Please feel free to contribute to this library as you see fit - added functions should include the following:
 - clear, lowercase and underscored name
@@ -251,10 +251,10 @@ parameters are needed.
 A "wiki_command_url_override" argument should be used where parts of the URL need to be replaced by the user to allow a
 valid URL to be left for the integration tests.
 
-A new [Wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) entry will be generated automatically from
+A new [Wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) entry will be generated automatically from
 this file's details.
 
-**Note:** If you want the integration test to work you must supply real, working data (a business address is 
+**Note:** If you want the integration test to work you must supply real, working data (a business address is
 recommended - the council's address is usually a good one).
 
 <details>
@@ -273,13 +273,13 @@ recommended - the council's address is usually a good one).
 
 ## Testing
 ### Behave (Integration Testing)
-As with any web scraping project, there's a reliance on the council not changing their website - if this happens Beautiful Soup 
-will fail to read the site correctly, and the expected data will not be returned. To mitigate this and stay on top 
-of "what works and what needs work" - we have created a set of Integration tests which run a [feature](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/tests/features/validate_council_outputs.feature) 
-file. 
+As with any web scraping project, there's a reliance on the council not changing their website - if this happens Beautiful Soup
+will fail to read the site correctly, and the expected data will not be returned. To mitigate this and stay on top
+of "what works and what needs work" - we have created a set of Integration tests which run a [feature](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/tests/features/validate_council_outputs.feature)
+file.
 
-Based on the [input.json](https://github.com/robbrad/UKBinCollectionData/blob/master/uk_bin_collection/tests/input.json),
-this does an actual live run against the council's site and validates if the returned data is JSON and conforms to the common format [JSON Schema](https://github.com/robbrad/UKBinCollectionData/tree/master/uk_bin_collection/tests/output.schema).
+Based on the [input.json](https://github.com/Toriniasty/UKBinCollectionData/blob/master/uk_bin_collection/tests/input.json),
+this does an actual live run against the council's site and validates if the returned data is JSON and conforms to the common format [JSON Schema](https://github.com/Toriniasty/UKBinCollectionData/tree/master/uk_bin_collection/tests/output.schema).
 
 By default if the council is a Selenium based council it will run in headless mode. If you pass `--headless=False` to pytest (possible in VS Code launch.json useful for debugging code) It will run in a visable browser.
 
@@ -330,17 +330,17 @@ poetry run pytest uk_bin_collection/tests/step_defs/ -n logical -k "BarnetCounci
 ```
 
 #### GitHub Actions Integration Tests
-The [GitHub actions](https://github.com/robbrad/UKBinCollectionData/actions/workflows/behave.yml) is set to run on push and pull_requests
+The [GitHub actions](https://github.com/Toriniasty/UKBinCollectionData/actions/workflows/behave.yml) is set to run on push and pull_requests
 
-It uses a [Makefile](https://github.com/robbrad/UKBinCollectionData/blob/master/Makefile) to run the [Behave](#behave--integration-testing-) tests to ensure the councils are all still working
+It uses a [Makefile](https://github.com/Toriniasty/UKBinCollectionData/blob/master/Makefile) to run the [Behave](#behave--integration-testing-) tests to ensure the councils are all still working
 
 #### Test Results
 
 ##### Allure Report
-The Github Actions publishes the Allure Behave Test results to Github Pages: https://robbrad.github.io/UKBinCollectionData/<python_version>/ eg https://robbrad.github.io/UKBinCollectionData/3.9/ you can check this to see if a council is still working as expected
+The Github Actions publishes the Allure Behave Test results to Github Pages: https://Toriniasty.github.io/UKBinCollectionData/<python_version>/ eg https://Toriniasty.github.io/UKBinCollectionData/3.9/ you can check this to see if a council is still working as expected
 
 ##### CodeCov Report
-The CodeCov.io report can be found [here](https://app.codecov.io/gh/robbrad/UKBinCollectionData) 
+The CodeCov.io report can be found [here](https://app.codecov.io/gh/Toriniasty/UKBinCollectionData)
 
 ### Pytest (Unit Testing)
 As well as integration testing the repo is setup to test some of the static methods as well to ensure basic core functionality
@@ -355,6 +355,6 @@ poetry run coverage xml
 
 # Contact info
 If you have questions or comments, you can reach the project contributors in the following ways:
-- Council requests can be submitted [here](https://github.com/robbrad/UKBinCollectionData/issues/new?assignees=&labels=Class%3A+enhancement&template=COUNCIL_REQUEST.yaml)
-- General questions or comments can be submitted [here](https://github.com/robbrad/UKBinCollectionData/discussions/categories/q-a)
+- Council requests can be submitted [here](https://github.com/Toriniasty/UKBinCollectionData/issues/new?assignees=&labels=Class%3A+enhancement&template=COUNCIL_REQUEST.yaml)
+- General questions or comments can be submitted [here](https://github.com/Toriniasty/UKBinCollectionData/discussions/categories/q-a)
 

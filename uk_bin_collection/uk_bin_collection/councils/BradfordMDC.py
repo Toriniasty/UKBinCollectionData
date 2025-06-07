@@ -136,7 +136,7 @@ class CouncilClass(AbstractGetBinDataClass):
 
         # Deduplicate the bins based on type and collection date
         # Feels a bit hacky, but fixes
-        # https://github.com/robbrad/UKBinCollectionData/issues/1436
+        # https://github.com/Toriniasty/UKBinCollectionData/issues/1436
         unique_bins = []
         seen = set()
         for bin_item in data["bins"]:

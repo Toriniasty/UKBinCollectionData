@@ -1,41 +1,41 @@
 [![Made with Python](https://img.shields.io/badge/Made%20With%20Python-red?style=for-the-badge&logo=python&logoColor=white&labelColor=red)](https://www.python.org)
 
-[![HACS Badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/robbrad/UKBinCollectionData)
-[![Current Release](https://img.shields.io/github/v/release/robbrad/UKBinCollectionData?style=for-the-badge&filter=*)](https://github.com/robbrad/UKBinCollectionData/releases)
+[![HACS Badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/Toriniasty/UKBinCollectionData)
+[![Current Release](https://img.shields.io/github/v/release/Toriniasty/UKBinCollectionData?style=for-the-badge&filter=*)](https://github.com/Toriniasty/UKBinCollectionData/releases)
 [![PyPi](https://img.shields.io/pypi/v/uk_bin_collection?label=PyPI&logo=pypi&style=for-the-badge&color=blue)](https://pypi.org/project/uk-bin-collection/)
 
-[![GitHub license](https://img.shields.io/github/license/robbrad/UKBinCollectionData?style=for-the-badge)](https://github.com/robbrad/UKBinCollectionData/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues-raw/robbrad/UKBinCollectionData?style=for-the-badge)](https://github.com/robbrad/UKBinCollectionData/issues?q=is%3Aopen+is%3Aissue)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/robbrad/UKBinCollectionData?style=for-the-badge)](https://github.com/robbrad/UKBinCollectionData/issues?q=is%3Aissue+is%3Aclosed)
-[![GitHub contributors](https://img.shields.io/github/contributors/robbrad/UKBinCollectionData?style=for-the-badge)](https://github.com/robbrad/UKBinCollectionData/graphs/contributors)
+[![GitHub license](https://img.shields.io/github/license/Toriniasty/UKBinCollectionData?style=for-the-badge)](https://github.com/Toriniasty/UKBinCollectionData/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues-raw/Toriniasty/UKBinCollectionData?style=for-the-badge)](https://github.com/Toriniasty/UKBinCollectionData/issues?q=is%3Aopen+is%3Aissue)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Toriniasty/UKBinCollectionData?style=for-the-badge)](https://github.com/Toriniasty/UKBinCollectionData/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub contributors](https://img.shields.io/github/contributors/Toriniasty/UKBinCollectionData?style=for-the-badge)](https://github.com/Toriniasty/UKBinCollectionData/graphs/contributors)
 
-[![Test Councils](https://img.shields.io/github/actions/workflow/status/robbrad/UKBinCollectionData/behave.yml?style=for-the-badge&label=Test+Councils)](https://github.com/robbrad/UKBinCollectionData/actions/workflows/behave.yml)
-![Codecov](https://img.shields.io/codecov/c/gh/robbrad/UKBinCollectionData?style=for-the-badge)
-[![CodeQL Analysis](https://img.shields.io/github/actions/workflow/status/robbrad/UKBinCollectionData/codeql-analysis.yml?style=for-the-badge&label=CodeQL+Analysis)](https://github.com/robbrad/UKBinCollectionData/actions/workflows/codeql-analysis.yml)
-[![Publish Release](https://img.shields.io/github/actions/workflow/status/robbrad/UKBinCollectionData/release.yml?style=for-the-badge&label=Publish+Release)](https://github.com/robbrad/UKBinCollectionData/actions/workflows/release.yml)
-[![Test Report Deployment](https://img.shields.io/github/actions/workflow/status/robbrad/UKBinCollectionData/pages%2Fpages-build-deployment?style=for-the-badge&label=Test+Report+Deployment)](https://github.com/robbrad/UKBinCollectionData/actions/workflows/pages/pages-build-deployment)
+[![Test Councils](https://img.shields.io/github/actions/workflow/status/Toriniasty/UKBinCollectionData/behave.yml?style=for-the-badge&label=Test+Councils)](https://github.com/Toriniasty/UKBinCollectionData/actions/workflows/behave.yml)
+![Codecov](https://img.shields.io/codecov/c/gh/Toriniasty/UKBinCollectionData?style=for-the-badge)
+[![CodeQL Analysis](https://img.shields.io/github/actions/workflow/status/Toriniasty/UKBinCollectionData/codeql-analysis.yml?style=for-the-badge&label=CodeQL+Analysis)](https://github.com/Toriniasty/UKBinCollectionData/actions/workflows/codeql-analysis.yml)
+[![Publish Release](https://img.shields.io/github/actions/workflow/status/Toriniasty/UKBinCollectionData/release.yml?style=for-the-badge&label=Publish+Release)](https://github.com/Toriniasty/UKBinCollectionData/actions/workflows/release.yml)
+[![Test Report Deployment](https://img.shields.io/github/actions/workflow/status/Toriniasty/UKBinCollectionData/pages%2Fpages-build-deployment?style=for-the-badge&label=Test+Report+Deployment)](https://github.com/Toriniasty/UKBinCollectionData/actions/workflows/pages/pages-build-deployment)
 
 # UK Bin Collection Data (UKBCD)
 This project aims to provide a neat and standard way of providing bin collection data in JSON format from UK councils that have no API to do so.
 
 Why would you want to do this?
-You might want to use this in Home Automation—for example, say you had an LED bar that lit up on the day of bin collection to the colour of the bin you want to take out; then this repo provides the data for that. 
+You might want to use this in Home Automation—for example, say you had an LED bar that lit up on the day of bin collection to the colour of the bin you want to take out; then this repo provides the data for that.
 
 **PLEASE respect a councils' infrastructure / usage policy and only collect data for your own personal use on a suitable frequency to your collection schedule.**
 
 Most scripts make use of [Beautiful Soup 4](https://pypi.org/project/beautifulsoup4/) to scrape data, although others use different approaches, such as emulating web browser behaviour, or reading data from CSV files.
 
 [![](https://img.shields.io/badge/-41BDF5?style=for-the-badge&logo=homeassistant&logoColor=white&label=HomeAssistant+Thread)](https://community.home-assistant.io/t/bin-waste-collection/55451)
-[![](https://img.shields.io/badge/Request%20a%20council-gray?style=for-the-badge&logo=github&logoColor=white)](https://github.com/robbrad/UKBinCollectionData/issues/new/choose)
+[![](https://img.shields.io/badge/Request%20a%20council-gray?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Toriniasty/UKBinCollectionData/issues/new/choose)
 
 ---
 
 ## Requesting your council
-> :warning: Please check that a request for your council has not already been made. You can do this by searching on the [Issues](https://github.com/robbrad/UKBinCollectionData/issues) page.
+> :warning: Please check that a request for your council has not already been made. You can do this by searching on the [Issues](https://github.com/Toriniasty/UKBinCollectionData/issues) page.
 
 If an issue already exists, please comment on that issue to express your interest. Please do not open a new issue, as it will be closed as a duplicate.
 
-If an issue does not already exist, please fill in a new [Council Request](https://github.com/robbrad/UKBinCollectionData/issues/new/choose) form, including as much information as possible, including:
+If an issue does not already exist, please fill in a new [Council Request](https://github.com/Toriniasty/UKBinCollectionData/issues/new/choose) form, including as much information as possible, including:
 - Name of the council.
 - URL to bin collections.
 - An example postcode and/or [UPRN](https://uprn.uk/) (whichever is relevant).
@@ -54,15 +54,15 @@ Please be aware that this project is run by volunteer contributors and completio
 
 This integration can be installed directly via HACS. To install:
 
-* [Add the repository](https://my.home-assistant.io/redirect/hacs_repository/?owner=robbrad&repository=UKBinCollectionData&category=integration) to your HACS installation
+* [Add the repository](https://my.home-assistant.io/redirect/hacs_repository/?owner=Toriniasty&repository=UKBinCollectionData&category=integration) to your HACS installation
 * Click `Download`
 
-For details on how to setup the custom component integration, see the [documentation](https://github.com/robbrad/UKBinCollectionData/tree/master/custom_components/uk_bin_collection).
+For details on how to setup the custom component integration, see the [documentation](https://github.com/Toriniasty/UKBinCollectionData/tree/master/custom_components/uk_bin_collection).
 
 #### Manual
 1. Ensure you have [HACS](https://hacs.xyz/) installed
 1. In the Home Assistant UI go to `HACS` > `Integrations` > `⋮` > `Custom repositories`.
-1. Enter `https://github.com/robbrad/UKBinCollectionData` in the `Repository` field.
+1. Enter `https://github.com/Toriniasty/UKBinCollectionData` in the `Repository` field.
 1. Select `Integration` as the category then click `ADD`.
 1. Click `+ Add Integration` and search for and select `UK Bin Collection Data` then click `Download`.
 1. Restart your Home Assistant.
@@ -73,7 +73,7 @@ For details on how to setup the custom component integration, see the [documenta
 
 1. Open the folder for your Home Assistant configuration (where you find `configuration.yaml`).
 1. If you do not have a `custom_components` folder there, you need to create it.
-1. [Download](https://github.com/robbrad/UKBinCollectionData/archive/refs/heads/master.zip) this repository then copy the folder `custom_components/uk_bin_collection` into the `custom_components` folder you found/created in the previous step.
+1. [Download](https://github.com/Toriniasty/UKBinCollectionData/archive/refs/heads/master.zip) this repository then copy the folder `custom_components/uk_bin_collection` into the `custom_components` folder you found/created in the previous step.
 1. Restart your Home Assistant.
 1. In the Home Assistant UI go to `Settings` > `Devices & Services` click `+ Add Integration` and search for `UK Bin Collection Data`.
 
@@ -87,11 +87,11 @@ Here is an example to set the colour and icon for the type `Empty Standard Gener
 If you miss this on the first setup, you can reconfigure it.
 
 ```json
-{     
-  "Empty Standard General Waste": 
-  {         
-    "icon": "mdi:trash-can",         
-    "color": "blue"     
+{
+  "Empty Standard General Waste":
+  {
+    "icon": "mdi:trash-can",
+    "color": "blue"
   }
 }
 ```
@@ -110,7 +110,7 @@ options:
   -h, --help                            show this help message                  (optional)
   -p POSTCODE, --postcode POSTCODE      Postcode to parse - should include      (optional)
                                         a space and be wrapped in double
-                                        quotes                                  
+                                        quotes
   -n NUMBER, --number NUMBER            House number to parse                   (optional)
   -u UPRN, --uprn UPRN                  UPRN to parse                           (optional)
 ```
@@ -134,11 +134,11 @@ be wrapped in double quotes (due to how command line arguments are handled).
 - A **house number** can be passed with `-n number` or `--number number`.
 - A **UPRN reference** can be passed with `-u uprn` or `--uprn uprn`.
 
-To check the parameters needed for your council's script, please check the [project wiki](https://github.com/robbrad/UKBinCollectionData/wiki) for more information.
+To check the parameters needed for your council's script, please check the [project wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki) for more information.
 
 
 ### Project dependencies
-Some scripts rely on external packages to function. A list of required scripts for both development and execution can be found in the project's [PROJECT_TOML](https://github.com/robbrad/UKBinCollectionData/blob/feature/%2353_integration_tests/pyproject.toml).
+Some scripts rely on external packages to function. A list of required scripts for both development and execution can be found in the project's [PROJECT_TOML](https://github.com/Toriniasty/UKBinCollectionData/blob/feature/%2353_integration_tests/pyproject.toml).
 Install can be done via  `poetry install` from within the root of the repo.
 
 ---
@@ -157,11 +157,11 @@ Some councils need Selenium to run the scrape on behalf of Home Assistant. The e
 ##### Windows
 
 1.  **Download Docker Desktop for Windows:**
-    
+
     *   Go to the Docker website: Docker Desktop for Windows.
     *   Download and install Docker Desktop.
 2.  **Run Docker Desktop:**
-    
+
     *   After installation, run Docker Desktop.
     *   Follow the on-screen instructions to complete the setup.
     *   Ensure Docker is running by checking the Docker icon in the system tray.
@@ -169,9 +169,9 @@ Some councils need Selenium to run the scrape on behalf of Home Assistant. The e
 ##### Linux
 
 1.  **Install Docker:**
-    
+
     *   Open a terminal and run the following commands:
-                       
+
         ```bash
         sudo apt-get update
         sudo apt-get install \
@@ -185,36 +185,36 @@ Some councils need Selenium to run the scrape on behalf of Home Assistant. The e
           "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
           $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         sudo apt-get update
-        sudo apt-get install docker-ce docker-ce-cli containerd.io 
+        sudo apt-get install docker-ce docker-ce-cli containerd.io
         ```
-        
+
 2.  **Start Docker:**
-    
+
     *   Run the following command to start Docker:
-                        
+
         ```bash
         sudo systemctl start docker
         ```
-        
+
 3.  **Enable Docker to start on boot:**
-    
+
     bash
-    
+
     Copy code
-    
+
     ```bash
     sudo systemctl enable docker
     ```
-    
+
 
 ##### Mac
 
 1.  **Download Docker Desktop for Mac:**
-    
+
     *   Go to the Docker website: Docker Desktop for Mac.
     *   Download and install Docker Desktop.
 2.  **Run Docker Desktop:**
-    
+
     *   After installation, run Docker Desktop.
     *   Follow the on-screen instructions to complete the setup.
     *   Ensure Docker is running by checking the Docker icon in the menu bar.
@@ -222,15 +222,15 @@ Some councils need Selenium to run the scrape on behalf of Home Assistant. The e
 #### Step 2: Pull and Run Selenium Standalone Chrome Docker Image
 
 1.  **Open a terminal or command prompt:**
-    
+
 2.  **Pull the Selenium Standalone Chrome image:**
-       
+
     ```bash
     docker pull selenium/standalone-chrome
     ```
-    
+
 3.  **Run the Selenium Standalone Chrome container:**
-        
+
     ```bash
     docker run -d -p 4444:4444 --name selenium-chrome selenium/standalone-chrome
     ```
@@ -244,10 +244,10 @@ Some councils need Selenium to run the scrape on behalf of Home Assistant. The e
 #### Step 4: Supply the Selenium Server URL to UKBinCollectionData
 
 1.  **Find the `UKBinCollectionData` project:**
-    
-    *   Go to the GitHub repository: [UKBinCollectionData](https://github.com/robbrad/UKBinCollectionData).
+
+    *   Go to the GitHub repository: [UKBinCollectionData](https://github.com/Toriniasty/UKBinCollectionData).
 2.  **Supply the Selenium Server URL:**
-    
+
     *   Typically, the URL will be `http://localhost:4444/wd/hub`.
     *   You might need to update a configuration file or environment variable in the project to use this URL. Check the project's documentation for specific instructions.
 
@@ -332,10 +332,10 @@ Since the Raspberry Pi 4 uses an ARM64-based architecture, use the `seleniarm/st
 
 ## Reports
 
-All integration tests results are in [CodeCov](https://app.codecov.io/gh/robbrad/UKBinCollectionData/)
+All integration tests results are in [CodeCov](https://app.codecov.io/gh/Toriniasty/UKBinCollectionData/)
 
 ### Nightly Full Integration Test Reports:
-- [Nightly Council Test](https://app.codecov.io/gh/robbrad/UKBinCollectionData/tests/master)
+- [Nightly Council Test](https://app.codecov.io/gh/Toriniasty/UKBinCollectionData/tests/master)
 
 
 🗺️ View Test Coverage Map (in VS Code)
@@ -368,7 +368,7 @@ This file is used by the map to color each council:
 Open the map viewer in VS Code:
 
 1.  Right-click the `map.html` file in VSCode and choose **Show Preview**
-    
+
 2.  The map will open in your browser, showing real-time integration coverage and test results.
 
 ![Test Results Map](test_results_map.png)
@@ -443,10 +443,10 @@ python bin_to_ics.py -i bin_data.json --no-all-day
 
 ### Integration with Bin Collection Data Retriever
 
-You can pipe the output from the bin collection data retriever directly to the ICS generator. The required parameters (postcode, house number, UPRN, etc.) depend on the specific council implementation - refer to the [Quickstart](#quickstart) section above or check the [project wiki](https://github.com/robbrad/UKBinCollectionData/wiki) for details about your council.
+You can pipe the output from the bin collection data retriever directly to the ICS generator. The required parameters (postcode, house number, UPRN, etc.) depend on the specific council implementation - refer to the [Quickstart](#quickstart) section above or check the [project wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki) for details about your council.
 
 ```bash
-python uk_bin_collection/uk_bin_collection/collect_data.py CouncilName "URL" [OPTIONS] | 
+python uk_bin_collection/uk_bin_collection/collect_data.py CouncilName "URL" [OPTIONS] |
   python bin_to_ics.py [OPTIONS]
 ```
 
@@ -553,7 +553,7 @@ If you have your calendar connected to Google Calendar or Outlook, you can ask y
 - "Alexa, what's on my calendar tomorrow?" (will include bin collections)
 
 ## Docker API Server
-We have created an API for this located under [uk_bin_collection_api_server](https://github.com/robbrad/UKBinCollectionData/uk_bin_collection_api_server)
+We have created an API for this located under [uk_bin_collection_api_server](https://github.com/Toriniasty/UKBinCollectionData/uk_bin_collection_api_server)
 
 ### Prerequisites
 
@@ -614,7 +614,7 @@ services:
   ukbc_api_server:
     build:
       context: .
-      dockerfile: Dockerfile 
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"  # Adjust the ports as needed
     depends_on:
@@ -638,15 +638,15 @@ docker-compose up
 
 ## FAQ
 #### I've got an issue/support question—what do I do?
-Please post in the [HomeAssistant thread](https://community.home-assistant.io/t/bin-waste-collection/55451) or raise a new (non-council request) [issue](https://github.com/robbrad/UKBinCollectionData/issues/new).
+Please post in the [HomeAssistant thread](https://community.home-assistant.io/t/bin-waste-collection/55451) or raise a new (non-council request) [issue](https://github.com/Toriniasty/UKBinCollectionData/issues/new).
 
 #### I'd like to contribute, where do I start?
-Contributions are always welcome! See ```CONTRIBUTING.md``` to get started. Please adhere to the project's [code of conduct](https://github.com/robbrad/UKBinCollectionData/blob/master/CODE_OF_CONDUCT.md).
+Contributions are always welcome! See ```CONTRIBUTING.md``` to get started. Please adhere to the project's [code of conduct](https://github.com/Toriniasty/UKBinCollectionData/blob/master/CODE_OF_CONDUCT.md).
 
-- If you're new to coding/Python/BeautifulSoup, feel free to check [here](https://github.com/robbrad/UKBinCollectionData/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) for issues that are good for newcomers!
+- If you're new to coding/Python/BeautifulSoup, feel free to check [here](https://github.com/Toriniasty/UKBinCollectionData/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) for issues that are good for newcomers!
 - If you would like to try writing your own scraper, feel free to fork this project and use existing scrapers as a base for your approach (or `councilclasstemplate.py`).
 
 ## Contributors
-<a href="https://github.com/robbrad/UKBinCollectionData/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=robbrad/UKBinCollectionData"  alt="Image of contributors"/>
+<a href="https://github.com/Toriniasty/UKBinCollectionData/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Toriniasty/UKBinCollectionData"  alt="Image of contributors"/>
 </a>

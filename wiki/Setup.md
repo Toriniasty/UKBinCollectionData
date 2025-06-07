@@ -5,4 +5,4 @@
 1. Run `poetry install` and wait to finish
 1. Run `poetry shell`
 1. Change directory to `uk_bin_collection/uk_bin_collection/`
-1. Run the correct parser for [your council](https://github.com/robbrad/UKBinCollectionData/wiki/Councils)
+1. Run the correct parser for [your council](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils)

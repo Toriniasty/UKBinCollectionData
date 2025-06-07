@@ -7,11 +7,11 @@
                 "data": {
                     "name": "Ainm Àite",
                     "council": "Comhairle",
-                    "manual_refresh_only": "Ùraich an sensor gu fèin-obrachail",                    
+                    "manual_refresh_only": "Ùraich an sensor gu fèin-obrachail",
                     "local_browser": "Na ruith air frithealaiche Selenium iomallach, cleachd stàladh ionadail de Chrome an àite",
-                    "icon_color_mapping": "JSON gus Seòrsa Biona a mhapadh airson Dath agus Ìomhaigh faic: https://github.com/robbrad/UKBinCollectionData"
+                    "icon_color_mapping": "JSON gus Seòrsa Biona a mhapadh airson Dath agus Ìomhaigh faic: https://github.com/Toriniasty/UKBinCollectionData"
                 },
-                "description": "Feuch an toir thu sùil [an seo](https://github.com/robbrad/UKBinCollectionData#requesting-your-council) mura h-eil do chomhairle air a liostadh"
+                "description": "Feuch an toir thu sùil [an seo](https://github.com/Toriniasty/UKBinCollectionData#requesting-your-council) mura h-eil do chomhairle air a liostadh"
             },
             "council": {
                 "title": "Thoir seachad mion-fhiosrachadh na comhairle",
@@ -28,7 +28,7 @@
                     "local_browser": "Na ruith air frithealaiche Selenium iomallach, cleachd stàladh ionadail de Chrome an àite",
                     "submit": "Cuir a-steach"
                 },
-                "description": "Feuch an toir thu sùil air inntrigeadh [wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) na comhairle agad airson mion-fhiosrachadh air dè a chur a-steach.\n{selenium_message}"
+                "description": "Feuch an toir thu sùil air inntrigeadh [wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) na comhairle agad airson mion-fhiosrachadh air dè a chur a-steach.\n{selenium_message}"
             },
             "reconfigure_confirm": {
                 "title": "Ùraich mion-fhiosrachadh na comhairle",
@@ -44,10 +44,10 @@
                     "headless": "Ruith Selenium ann am modh gun cheann (air a mholadh)",
                     "manual_refresh_only": "Ùraich an sensor gu fèin-obrachail",
                     "local_browser": "Na ruith air frithealaiche Selenium iomallach, cleachd stàladh ionadail de Chrome an àite",
-                    "icon_color_mapping": "JSON gus Seòrsa Biona a mhapadh airson Dath agus Ìomhaigh faic: https://github.com/robbrad/UKBinCollectionData",
+                    "icon_color_mapping": "JSON gus Seòrsa Biona a mhapadh airson Dath agus Ìomhaigh faic: https://github.com/Toriniasty/UKBinCollectionData",
                     "submit": "Cuir a-steach"
                 },
-                "description": "Feuch an toir thu sùil air inntrigeadh [wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) na comhairle agad airson mion-fhiosrachadh air dè a chur a-steach."
+                "description": "Feuch an toir thu sùil air inntrigeadh [wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) na comhairle agad airson mion-fhiosrachadh air dè a chur a-steach."
             }
         },
         "error": {

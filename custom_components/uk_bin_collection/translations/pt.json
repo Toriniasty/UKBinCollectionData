@@ -8,9 +8,9 @@
                     "name": "Nome da localização",
                     "council": "Conselho",
                     "manual_refresh_only": "Atualize o sensor automaticamente",
-                    "icon_color_mapping": "JSON para mapear Tipo de Lixo para Cor e Ícone veja: https://github.com/robbrad/UKBinCollectionData"
+                    "icon_color_mapping": "JSON para mapear Tipo de Lixo para Cor e Ícone veja: https://github.com/Toriniasty/UKBinCollectionData"
                 },
-                "description": "Por favor, veja [aqui](https://github.com/robbrad/UKBinCollectionData#requesting-your-council) se o seu conselho não estiver listado"
+                "description": "Por favor, veja [aqui](https://github.com/Toriniasty/UKBinCollectionData#requesting-your-council) se o seu conselho não estiver listado"
             },
             "council": {
                 "title": "Forneça os detalhes do conselho",
@@ -27,7 +27,7 @@
                     "local_browser": "Não execute no servidor Selenium remoto, use a instalação local do Chrome em vez disso",
                     "submit": "Enviar"
                 },
-                "description": "Por favor, consulte a entrada [wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) do seu conselho para detalhes sobre o que inserir.\n{selenium_message}"
+                "description": "Por favor, consulte a entrada [wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) do seu conselho para detalhes sobre o que inserir.\n{selenium_message}"
             },
             "reconfigure_confirm": {
                 "title": "Atualizar detalhes do conselho",
@@ -43,10 +43,10 @@
                     "headless": "Execute o Selenium no modo sem cabeça (recomendado)",
                     "manual_refresh_only": "Atualize o sensor automaticamente",
                     "local_browser": "Não execute no servidor Selenium remoto, use a instalação local do Chrome em vez disso",
-                    "icon_color_mapping": "JSON para mapear Tipo de Lixo para Cor e Ícone veja: https://github.com/robbrad/UKBinCollectionData",
+                    "icon_color_mapping": "JSON para mapear Tipo de Lixo para Cor e Ícone veja: https://github.com/Toriniasty/UKBinCollectionData",
                     "submit": "Enviar"
                 },
-                "description": "Por favor, consulte a entrada [wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) do seu conselho para detalhes sobre o que inserir."
+                "description": "Por favor, consulte a entrada [wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) do seu conselho para detalhes sobre o que inserir."
             }
         },
         "error": {

@@ -8,9 +8,9 @@
                     "name": "Ainm Suíomh",
                     "council": "Comhairle",
                     "manual_refresh_only": "Athnuaigh an braiteoir go huathoibríoch",
-                    "icon_color_mapping": "JSON chun Cineál Bin a mhapáil do Dath agus Deilbhín féach: https://github.com/robbrad/UKBinCollectionData"
+                    "icon_color_mapping": "JSON chun Cineál Bin a mhapáil do Dath agus Deilbhín féach: https://github.com/Toriniasty/UKBinCollectionData"
                 },
-                "description": "Féach [anseo](https://github.com/robbrad/UKBinCollectionData#requesting-your-council) mura bhfuil do chomhairle liostaithe"
+                "description": "Féach [anseo](https://github.com/Toriniasty/UKBinCollectionData#requesting-your-council) mura bhfuil do chomhairle liostaithe"
             },
             "council": {
                 "title": "Sonraí na comhairle a sholáthar",
@@ -27,7 +27,7 @@
                     "local_browser": "Ná rith ar fhreastalaí iargúlta Selenium, úsáid suiteáil áitiúil de Chrome ina ionad",
                     "submit": "Cuir isteach"
                 },
-                "description": "Féach ar iontráil [wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) do chomhairle le haghaidh sonraí ar cad atá le cur isteach.\n{selenium_message}"
+                "description": "Féach ar iontráil [wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) do chomhairle le haghaidh sonraí ar cad atá le cur isteach.\n{selenium_message}"
             },
             "reconfigure_confirm": {
                 "title": "Nuashonraigh sonraí na comhairle",
@@ -43,10 +43,10 @@
                     "headless": "Rith Selenium i mód gan cheann (molta)",
                     "local_browser": "Ná rith ar fhreastalaí iargúlta Selenium, úsáid suiteáil áitiúil de Chrome ina ionad",
                     "manual_refresh_only": "Athnuaigh an braiteoir go huathoibríoch",
-                    "icon_color_mapping": "JSON chun Cineál Bin a mhapáil do Dath agus Deilbhín féach: https://github.com/robbrad/UKBinCollectionData",
+                    "icon_color_mapping": "JSON chun Cineál Bin a mhapáil do Dath agus Deilbhín féach: https://github.com/Toriniasty/UKBinCollectionData",
                     "submit": "Cuir isteach"
                 },
-                "description": "Féach ar iontráil [wiki](https://github.com/robbrad/UKBinCollectionData/wiki/Councils) do chomhairle le haghaidh sonraí ar cad atá le cur isteach."
+                "description": "Féach ar iontráil [wiki](https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils) do chomhairle le haghaidh sonraí ar cad atá le cur isteach."
             }
         },
         "error": {

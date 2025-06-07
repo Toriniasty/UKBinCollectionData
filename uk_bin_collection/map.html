@@ -42,7 +42,7 @@
 
       for (const [moduleName, entry] of Object.entries(integrationData)) {
         const wikiName = entry.wiki_name || moduleName;
-        const wikiUrl = `https://github.com/robbrad/UKBinCollectionData/wiki/Councils#${slugify(wikiName)}`;
+        const wikiUrl = `https://github.com/Toriniasty/UKBinCollectionData/wiki/Councils#${slugify(wikiName)}`;
         const normalizeKey = str => str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
         const testResult = testResults[normalizeKey(moduleName)] || null;

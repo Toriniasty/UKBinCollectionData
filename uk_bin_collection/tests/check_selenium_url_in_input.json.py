@@ -42,7 +42,7 @@ def get_council_file_content(api_url):
     The 'download_url' is direct raw, but the 'url' is the API URL for the content.
     We'll use the latter, decode base64, and return the text.
     """
-    # Example: https://api.github.com/repos/robbrad/UKBinCollectionData/contents/...
+    # Example: https://api.github.com/repos/Toriniasty/UKBinCollectionData/contents/...
     response = requests.get(
         api_url, headers={"Accept": "application/vnd.github.v3+json"}
     )
@@ -152,7 +152,7 @@ def compare_councils(file_council_dict, json_data):
     return all_council_data, any_discrepancies_found, any_updates_needed
 
 
-def main(repo="robbrad/UKBinCollectionData", branch="master"):
+def main(repo="Toriniasty/UKBinCollectionData", branch="master"):
     print(f"Starting comparison for repo: {repo}, branch: {branch}")
 
     # 1) Get council file data (dict: { council_name: content_api_url, ... })
@@ -211,6 +211,6 @@ def main(repo="robbrad/UKBinCollectionData", branch="master"):
 
 if __name__ == "__main__":
     # Optional CLI args: python script.py <repo> <branch>
-    repo_arg = sys.argv[1] if len(sys.argv) > 1 else "robbrad/UKBinCollectionData"
+    repo_arg = sys.argv[1] if len(sys.argv) > 1 else "Toriniasty/UKBinCollectionData"
     branch_arg = sys.argv[2] if len(sys.argv) > 2 else "master"
     main(repo_arg, branch_arg)

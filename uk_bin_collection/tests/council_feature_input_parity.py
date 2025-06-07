@@ -71,7 +71,7 @@ def compare_councils(councils1, councils2):
     return all_council_data, discrepancies_found
 
 
-def main(repo="robbrad/UKBinCollectionData", branch="master"):
+def main(repo="Toriniasty/UKBinCollectionData", branch="master"):
     # Execute and print the comparison
     print(f"Starting comparison for repo: {repo}, branch: {branch}")
     file_councils = get_councils_from_files(repo, branch)
@@ -104,6 +104,6 @@ def main(repo="robbrad/UKBinCollectionData", branch="master"):
 
 
 if __name__ == "__main__":
-    repo = sys.argv[1] if len(sys.argv) > 1 else "robbrad/UKBinCollectionData"
+    repo = sys.argv[1] if len(sys.argv) > 1 else "Toriniasty/UKBinCollectionData"
     branch = sys.argv[2] if len(sys.argv) > 2 else "master"
     main(repo, branch)

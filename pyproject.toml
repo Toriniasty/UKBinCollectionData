@@ -3,7 +3,7 @@ name = "uk_bin_collection"
 version = "0.152.3"
 description = "Python Lib to collect UK Bin Data"
 readme = "README.md"
-authors = ["Robert Bradley <robbrad182@gmail.com>"]
+authors = ["Robert Bradley <Toriniasty182@gmail.com>"]
 packages = [
     { include = "uk_bin_collection", from = "." },
 ]
@@ -18,7 +18,7 @@ pythonpath = [
 module = "uk_bin_collection"
 
 [tool.poetry.urls]
-issues = "https://github.com/robbrad/UKBinCollectionData/issues"
+issues = "https://github.com/Toriniasty/UKBinCollectionData/issues"
 
 [build-system]
 requires = ["poetry-core>=1.2.0"]
